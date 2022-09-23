@@ -1,0 +1,11 @@
+<launch>
+
+<include file="$(find panda_moveit_config)/launch/demo.launch"/>
+
+<node name="scene_builder" pkg="aipr_support_2209" type="scene_builder_node"></node>
+
+<node pkg="tf2_ros" type="static_transform_publisher" name="table1_broadcaster" args="0.7 0 0 0 0 0 world table_1" />
+
+<node pkg="tf2_ros" type="static_transform_publisher" name="table2_broadcaster" args="0 0.75 0 0 0 0 world table_2" />
+
+</launch>
