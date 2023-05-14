@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(aipr_support_2209)
+project(panda_moveit_demo_support)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 add_compile_options(-std=c++11)
@@ -103,7 +103,7 @@ moveit_ros_planning_interface
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES AIPR_support_2209
+#  LIBRARIES panda_moveit_demo_support
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
 )
@@ -121,7 +121,7 @@ ${catkin_INCLUDE_DIRS}
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/AIPR_support_2209.cpp
+#   src/${PROJECT_NAME}/panda_moveit_demo_support.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -132,7 +132,7 @@ ${catkin_INCLUDE_DIRS}
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/AIPR_support_2209_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/panda_moveit_demo_support_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -202,7 +202,7 @@ target_link_libraries(scene_builder_node
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_AIPR_support_2209.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_panda_moveit_demo_support.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

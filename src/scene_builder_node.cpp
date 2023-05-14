@@ -148,7 +148,6 @@ int main(int argc, char *argv[]) {
   ros::NodeHandle node_handle;
 
   static const std::string PLANNING_GROUP = "panda_arm";
-  static const std::string EE_LINK = "panda_hand_tcp";
 
   move_group_interface =
       std::unique_ptr<moveit::planning_interface::MoveGroupInterface>(
